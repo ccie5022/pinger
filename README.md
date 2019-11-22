@@ -1,25 +1,24 @@
 # pinger
-TCL script for Cisco IOS to ping IPs
+TCL script for Cisco IOS to ping IPs<br>
 To run:<br>
-At the # prompt enter tclsh
-paste in the the first part of the script:
-proc pinger { iplist } {
-	  foreach ip $iplist {
-	    if { [regexp "(!!!)" [exec "ping $ip timeout 1" ]] } {
-	      puts "$ip **** good ****"
-	    } else { puts "$ip **** failed ***" }
-	  }
-	}
-
-Which IP's to ping?
-type in pinger {
-8.8.8.8
-8.8.4.4
-10.1.1.1
-}
-
-Here are the results.
-8.8.8.8 **** good ****
-8.8.4.4 **** good ****
-10.1.1.1 **** failed ***
-
+At the # prompt enter tclsh<br>
+paste in the the first part of the script:<br>
+proc pinger { iplist } {<br>
+	  foreach ip $iplist {<br>
+	    if { [regexp "(!!!)" [exec "ping $ip timeout 1" ]] } {<br>
+	      puts "$ip **** good ****"<br>
+	    } else { puts "$ip **** failed ***" }<br>
+	  }<br>
+	}<br>
+<br>
+Which IP's to ping?<br>
+type in pinger {<br>
+8.8.8.8<br>
+8.8.4.4<br>
+10.1.1.1<br>
+}<br>
+<br>
+Here are the results.<br>
+8.8.8.8 **** good ****<br>
+8.8.4.4 **** good ****<br>
+10.1.1.1 **** failed ***<br>
