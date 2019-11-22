@@ -1,6 +1,6 @@
 # pinger
 TCL script for Cisco IOS to ping IPs
-To run:
+To run:<br>
 At the # prompt enter tclsh
 paste in the the first part of the script:
 proc pinger { iplist } {
